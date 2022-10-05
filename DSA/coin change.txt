@@ -1,0 +1,3 @@
+coin change problem in simple :
+(no. of way you can form the value without coin current denomination) + 
+(no. of ways you can form (target-current coin denomination))
