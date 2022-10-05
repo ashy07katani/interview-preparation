@@ -1,0 +1,10 @@
+if(wtval[i-1].first > j)
+	{
+	    dp[i][j] = dp[i-1][j];
+        }
+else
+	{
+	    dp[i][j] = max(dp[i-1][j], dp[i-1][j-wtval[i-1].first]+wtval[i-1].second);
+	}
+
+we will be comparing in the previous row because here we don't have the case of infinite denomination
