@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 int nCr(int n, int r){
-        
-        int count =0 ;
+        // code here
+        int m = 1000000007;
         int dp[r+1][n+1];
         
         for(int i=0;i<=r;i++)
@@ -27,7 +27,7 @@ int nCr(int n, int r){
 				}
 				else
 				{
-					dp[i][j] = dp[i-1][j-1] + dp[i][j-1];
+					dp[i][j] = ((dp[i-1][j-1])%m + (dp[i][j-1])%m)%m;
 				}
 			}
 		}
