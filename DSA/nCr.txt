@@ -1,0 +1,2 @@
+The logic is really simple :
+nCr = n-1Cr-1 + n-1Cr
